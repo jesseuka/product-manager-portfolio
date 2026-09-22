@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesse Chidiebere Uka | Product Manager Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background: #f8fafc;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e5e7eb;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #4f46e5;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #374151;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #4f46e5;
+        }
+
+        .hero {
+            padding: 100px 8%;
+            background: linear-gradient(135deg, #eef2ff, #f8fafc);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #111827;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 24px;
+            color: #4f46e5;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            font-size: 18px;
+            color: #4b5563;
+            margin-bottom: 30px;
+        }
+
+        .buttons a {
+            display: inline-block;
+            padding: 12px 22px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .primary {
+            background: #4f46e5;
+            color: white;
+        }
+
+        .secondary {
+            border: 1px solid #4f46e5;
+            color: #4f46e5;
+            background: white;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #111827;
+        }
+
+        .about p {
+            max-width: 800px;
+            color: #4b5563;
+            font-size: 17px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .skill-card h3 {
+            margin-bottom: 10px;
+            color: #4f46e5;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .project-card h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #111827;
+        }
+
+        .project-card p {
+            color: #4b5563;
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #eef2ff;
+            color: #4f46e5;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin: 3px;
+        }
+
+        .experience-box {
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            border: 1px solid #e5e7eb;
+            max-width: 800px;
+        }
+
+        .experience-box h3 {
+            color: #4f46e5;
+            margin-bottom: 5px;
+        }
+
+        .experience-box ul {
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+
+        .experience-box li {
+            margin-bottom: 8px;
+        }
+
+        .contact {
+            background: #111827;
+            color: white;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact p {
+            color: #d1d5db;
+            margin-bottom: 20px;
+        }
+
+        .contact a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0f172a;
+            color: #9ca3af;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">JESSE CHIDIEBERE UKA</div>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+<section class="hero">
+    <h1>JESSE CHIDIEBERE UKA</h1>
+
+    <h2>Aspiring Product Manager</h2>
+
+    <p>
+        Turning user problems into simple, valuable solutions.
+        I am building my Product Management skills through practical
+        projects, product research, problem solving, PRD development,
+        user stories and product design.
+    </p>
+
+    <div class="buttons">
+        <a href="#projects" class="primary">View My Work</a>
+
+        <!-- Replace the # below with your LinkedIn URL -->
+        <a href="#" class="secondary">LinkedIn</a>
+    </div>
+</section>
+
+
+<section id="about" class="about">
+    <h2>About Me</h2>
+
+    <p>
+        I am passionate about understanding people, identifying problems
+        and turning those problems into simple and useful product solutions.
+        My background in Public Administration has strengthened my interest
+        in organization, communication, problem solving and working with people.
+    </p>
+
+    <br>
+
+    <p>
+        I am currently developing my Product Management skills through
+        practical projects involving user research, product strategy,
+        PRDs, user stories, Agile, Scrum, product design and prototyping.
+        I enjoy learning, building and finding better ways to solve real
+        user problems.
+    </p>
+</section>
+
+
+<section id="skills">
+    <h2>What I Do</h2>
+
+    <div class="skills">
+
+        <div class="skill-card">
+            <h3>User Research</h3>
+            <p>
+                Understanding users, their needs, pain points and behaviours.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Product Strategy</h3>
+            <p>
+                Defining product goals, users, value and product direction.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>PRD & Requirements</h3>
+            <p>
+                Turning product ideas and problems into clear product requirements.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>User Stories</h3>
+            <p>
+                Defining product requirements from the user's perspective.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Agile & Scrum</h3>
+            <p>
+                Understanding product backlogs, prioritization and Scrum processes.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Product Design</h3>
+            <p>
+                Creating basic product flows, wireframes and prototypes using Figma.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="projects">
+    <h2>Featured Projects</h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+            <h3>ROUTEY</h3>
+
+            <p>
+                A centralized delivery tracking platform designed to help
+                SMEs monitor deliveries across different courier companies
+                and gig-rider services from one platform.
+            </p>
+
+            <p><strong>My Role:</strong> Product Management</p>
+
+            <span class="tag">PRD</span>
+            <span class="tag">User Stories</span>
+            <span class="tag">Product Strategy</span>
+            <span class="tag">Figma</span>
+
+            <br><br>
+
+            <a href="#" class="primary buttons">
+                View Case Study
+            </a>
+        </div>
+
+
+        <div class="project-card">
+            <h3>Student Academic Planner</h3>
+
+            <p>
+                A digital product concept designed to help students organize
+                academic activities, assignments, deadlines and other important
+                school tasks.
+            </p>
+
+            <p><strong>My Role:</strong> Product Management</p>
+
+            <span class="tag">User Stories</span>
+            <span class="tag">Product Thinking</span>
+            <span class="tag">UX</span>
+            <span class="tag">Figma</span>
+
+            <br><br>
+
+            <a href="#" class="primary buttons">
+                View Case Study
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<section>
+    <h2>My Product Thinking Process</h2>
+
+    <div class="experience-box">
+
+        <p>
+            I believe good products start with a clear understanding of
+            the problem. My approach is to understand the user, define
+            the problem, explore possible solutions, prioritize what
+            matters and work toward measurable outcomes.
+        </p>
+
+        <br>
+
+        <strong>
+            Understand → Define → Research → Ideate → Prioritize →
+            Define Requirements → Design → Test → Measure
+        </strong>
+
+    </div>
+</section>
+
+
+<section id="experience">
+    <h2>Experience</h2>
+
+    <div class="experience-box">
+
+        <h3>Institute for Peace and Conflict Resolution (IPCR)</h3>
+
+        <p>
+            <strong>Human Resource Management | Corps Member</strong>
+        </p>
+
+        <ul>
+            <li>Supported HR-related administrative activities.</li>
+            <li>Assisted with documentation and record management.</li>
+            <li>Supported communication and coordination within the department.</li>
+            <li>Gained practical experience in organizational and people management.</li>
+        </ul>
+
+    </div>
+</section>
+
+
+<section>
+    <h2>Education</h2>
+
+    <div class="experience-box">
+
+        <h3>Public Administration</h3>
+
+        <p>
+            Bachelor's degree / Academic background in Public Administration.
+        </p>
+
+    </div>
+</section>
+
+
+<section>
+    <h2>Currently Learning</h2>
+
+    <div class="skills">
+
+        <div class="skill-card">
+            <h3>Product Management</h3>
+            <p>Building practical PM skills through projects and structured learning.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Product Analytics</h3>
+            <p>Learning how product teams use data to understand users and measure success.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>UX/UI Design</h3>
+            <p>Developing practical product design and prototyping skills with Figma.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Agile & Scrum</h3>
+            <p>Learning how cross-functional teams plan, build and improve products.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="contact" class="contact">
+
+    <h2>Let's Connect</h2>
+
+    <p>
+        I am open to Product Management opportunities, internships,
+        collaborations and conversations with people building interesting products.
+    </p>
+
+    <!-- Replace the # with your real links -->
+    <a href="#">LinkedIn</a>
+    <a href="mailto:your-email@example.com">Email</a>
+
+</section>
+
+
+<footer>
+    © 2026 Jesse Chidiebere Uka. All rights reserved.
+</footer>
+
+</body>
+</html>
